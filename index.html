@@ -24,7 +24,8 @@
     --r:18px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
+  html{scroll-behavior:smooth;overflow-x:clip}
+  body{overflow-x:clip}
   body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
   img,video{display:block;max-width:100%}
   a{color:inherit;text-decoration:none}
@@ -253,7 +254,7 @@
       <a class="btn btn-wa" href="#data"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.2Z"/></svg>Consultar data no WhatsApp</a>
       <a class="btn btn-ghost" href="#espacos">Conhecer o espaço</a>
     </div>
-    <div class="rating in-up" style="--d:1.35s"><span class="stars">★★★★★</span> <span data-count="4.9" data-dec="1">4,9</span> no Google · <span data-count="63">63</span> avaliações</div>
+    <div class="rating in-up" style="--d:1.35s"><span class="stars">★★★★★</span> 4,9 no Google · 63 avaliações</div>
   </div>
   <div class="scroll-cue" aria-hidden="true"></div>
 </header>
