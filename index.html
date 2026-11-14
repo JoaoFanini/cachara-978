@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chácara Espaço 978 · Festas e eventos em Uberlândia</title>
+<meta name="description" content="Chácara para festas e eventos na Morada Nova, Uberlândia. Piscina, área gourmet com churrasqueira, quartos e jardim iluminado. Consulte sua data pelo WhatsApp.">
+<meta property="og:title" content="Chácara Espaço 978 · Festas e eventos em Uberlândia">
+<meta property="og:description" content="Piscina, área gourmet, jardim iluminado e quartos. Consulte sua data pelo WhatsApp.">
+<meta property="og:image" content="/img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1e3a2d">
+<link rel="preload" as="image" href="img/hero-1280.webp" imagesrcset="img/hero-640.webp 640w, img/hero-1280.webp 1280w" imagesizes="100vw">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#1e3a2d; --green-2:#2c5240; --grass:#5e8a3a;
+    --terra:#b5552f; --terra-2:#9a4524;
+    --cream:#f6f1e7; --sand:#ece4d4; --ink:#1d1d1a; --muted:#5f5d55;
+    --serif:'Fraunces',Georgia,serif; --sans:'Manrope',system-ui,sans-serif;
+    --r:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+  img,video{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+  .kicker{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--terra)}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.01em}
+  h2{font-size:clamp(32px,4.4vw,52px);margin:12px 0 18px}
+  .lead{font-size:18px;color:var(--muted);max-width:560px}
+  section.block{padding:110px 0}
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 26px;border-radius:999px;font-weight:700;font-size:15px;transition:transform .2s ease,background .2s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-wa{background:var(--terra);color:#fff;box-shadow:0 12px 30px rgba(181,85,47,.35)}
+  .btn-wa:hover{background:var(--terra-2)}
+  .btn-ghost{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+  .btn svg{width:20px;height:20px}
+
+  /* nav */
+  .nav{position:fixed;inset:0 0 auto 0;z-index:50;height:76px;display:flex;align-items:center;transition:background .3s ease,box-shadow .3s ease}
+  .nav.solid{background:rgba(246,241,231,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(0,0,0,.06)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
+  .brand{display:flex;align-items:baseline;gap:8px;color:#fff;transition:color .3s}
+  .brand b{font-family:var(--serif);font-size:24px;font-weight:600}
+  .brand span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;opacity:.85}
+  .nav.solid .brand{color:var(--green)}
+  .nav ul{display:flex;gap:30px;list-style:none;font-size:14px;font-weight:600;color:#fff}
+  .nav.solid ul{color:var(--ink)}
+  .nav ul a{opacity:.85}.nav ul a:hover{opacity:1}
+  .nav .btn{height:44px;padding:0 20px;font-size:14px}
+
+  /* hero */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+  .hero .bg img{width:100%;height:100%;object-fit:cover;object-position:center 60%;transform:scale(1.04)}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,28,22,.5) 0%,rgba(15,28,22,0) 28%,rgba(15,28,22,.35) 55%,rgba(15,28,22,.88) 100%),linear-gradient(90deg,rgba(15,28,22,.55) 0%,rgba(15,28,22,0) 65%)}
+  .hero .wrap{position:relative;z-index:2;padding-bottom:90px;width:100%}
+  .hero .kicker{color:#f3c9a8}
+  .hero h1{font-size:clamp(44px,7.4vw,96px);max-width:900px;margin:16px 0 20px}
+  .hero h1 em{font-style:italic;font-weight:400;color:#f3c9a8}
+  .hero p{font-size:19px;max-width:520px;opacity:.92;margin-bottom:34px}
+  .hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .rating{display:inline-flex;align-items:center;gap:10px;margin-top:34px;padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.12);backdrop-filter:blur(8px);font-size:14px;font-weight:600}
+  .stars{color:#f5c04a;letter-spacing:2px}
+
+  /* highlights */
+  .hl{background:var(--green);color:#f1ece0}
+  .hl .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  .hl div{padding:34px 26px;border-left:1px solid rgba(255,255,255,.1)}
+  .hl div:first-child{border-left:0}
+  .hl b{display:block;font-family:var(--serif);font-size:22px;font-weight:600;color:#fff;margin-bottom:4px}
+  .hl span{font-size:14px;opacity:.75}
+
+  /* overview */
+  .overview .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:70px;align-items:center}
+  .overview figure{border-radius:var(--r);overflow:hidden;box-shadow:0 30px 60px rgba(30,58,45,.18);aspect-ratio:4/5}
+  .overview figure img{width:100%;height:100%;object-fit:cover}
+  .checks{list-style:none;margin-top:28px;display:grid;gap:14px}
+  .checks li{opacity:0;transform:translateX(-18px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:var(--d,0s);display:flex;gap:14px;align-items:flex-start;font-size:16px}
+  .checks.in li{opacity:1;transform:none}
+  .checks li::before{content:"";flex:none;width:22px;height:22px;margin-top:2px;border-radius:50%;background:var(--grass) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='M6 12l4 4 8-8'/%3E%3C/svg%3E") center/14px no-repeat}
+
+  /* spaces */
+  .spaces{background:var(--sand)}
+  .spaces .head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:48px;flex-wrap:wrap}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .card{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:3/4;color:#fff;background:#222}
+  .card img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+  .card:hover img{transform:scale(1.05)}
+  .card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(10,20,15,.82))}
+  .card .t{position:absolute;left:24px;right:24px;bottom:22px;z-index:2}
+  .card h3{font-size:26px;margin-bottom:4px}
+  .card p{font-size:14.5px;opacity:.88;line-height:1.45}
+
+  /* tour */
+  .tour .wrap{display:grid;grid-template-columns:1fr 380px;gap:70px;align-items:center}
+  .phone{border-radius:34px;padding:10px;background:#141414;box-shadow:0 40px 80px rgba(0,0,0,.28)}
+  .phone video{border-radius:26px;width:100%;aspect-ratio:9/16;object-fit:cover;background:#000}
+
+  /* gallery */
+  .gallery{columns:4 240px;column-gap:16px}
+  .gallery img{width:100%;margin-bottom:16px;border-radius:14px;cursor:zoom-in;transition:opacity .2s}
+  .gallery img:hover{opacity:.9}
+  .lb{position:fixed;inset:0;z-index:100;background:rgba(10,14,12,.94);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+  .lb.on{display:flex}
+  .lb img{max-height:92vh;max-width:92vw;border-radius:10px}
+
+  /* reviews */
+  .reviews{background:var(--green);color:#f1ece0}
+  .reviews .kicker{color:#f3c9a8}
+  .reviews h2{color:#fff}
+  .rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .rv blockquote{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:30px}
+  .rv p{font-family:var(--serif);font-size:20px;line-height:1.45;color:#fff;margin:14px 0 18px}
+  .rv cite{font-style:normal;font-size:13px;opacity:.7;letter-spacing:.06em}
+
+  /* booking */
+  .book .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+  form{background:#fff;border-radius:22px;padding:36px;box-shadow:0 30px 60px rgba(30,58,45,.12);display:grid;gap:18px}
+  label{display:grid;gap:7px;font-size:13px;font-weight:700;letter-spacing:.04em;color:var(--green)}
+  input,select{height:52px;border:1.5px solid #ddd5c5;border-radius:12px;padding:0 16px;font:500 16px var(--sans);color:var(--ink);background:#fbf9f4}
+  input:focus,select:focus{outline:none;border-color:var(--terra)}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  form .btn{justify-content:center;border:0;cursor:pointer;width:100%;font-family:var(--sans)}
+  .note{font-size:13px;color:var(--muted);text-align:center}
+  .info{margin-top:30px;display:grid;gap:18px}
+  .info>div{display:flex;gap:14px;align-items:flex-start}
+  .info svg{flex:none;width:22px;height:22px;color:var(--terra);margin-top:2px}
+  .info b{display:block;font-size:15px}
+  .info span{color:var(--muted);font-size:15px}
+  .map{margin-top:26px;border-radius:var(--r);overflow:hidden;height:240px;border:0;width:100%}
+
+  footer{background:#14241c;color:#cfc8b8;padding:46px 0 120px;font-size:14px}
+  footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  footer b{font-family:var(--serif);color:#fff;font-size:20px}
+
+  .mbar{display:none}
+
+  /* watermark */
+  .wm{position:fixed;left:16px;bottom:16px;z-index:90;display:flex;align-items:center;gap:10px;background:rgba(14,14,13,.9);border:1px solid rgba(255,255,255,.12);color:#e9e6df;border-radius:999px;padding:6px 16px 6px 6px;font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.04em;backdrop-filter:blur(6px);box-shadow:0 8px 24px rgba(0,0,0,.4);pointer-events:none;user-select:none}
+  .wm svg{width:26px;height:26px;flex:none}
+
+  /* ---------- ANIMAÇÕES ---------- */
+  :root{--ease:cubic-bezier(.22,1,.36,1)}
+  .progress{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--terra),#f3c9a8);z-index:60}
+  /* entrada */
+  .nav{animation:navIn .9s var(--ease) .2s both}
+  @keyframes navIn{from{opacity:0;transform:translateY(-100%)}}
+  .hero .in-up{opacity:0;transform:translateY(28px);animation:inUp 1s var(--ease) forwards;animation-delay:var(--d,0s)}
+  @keyframes inUp{to{opacity:1;transform:none}}
+  .hero h1 .ln{display:block;overflow:hidden;padding-bottom:.08em}
+  .hero h1 .ln>span{display:inline-block;transform:translateY(110%);animation:lineUp 1.15s var(--ease) forwards;animation-delay:var(--d,0s)}
+  @keyframes lineUp{to{transform:none}}
+  .hero .bg{position:absolute;inset:0;will-change:transform}
+  .hero .bg img{animation:heroZoom 2.4s var(--ease) both}
+  @keyframes heroZoom{from{transform:scale(1.18);filter:brightness(.6)}to{transform:scale(1.04);filter:none}}
+  .scroll-cue{position:absolute;left:50%;bottom:26px;z-index:3;width:26px;height:42px;margin-left:-13px;border:2px solid rgba(255,255,255,.6);border-radius:14px;opacity:0;animation:inUp 1s var(--ease) 1.6s forwards}
+  .scroll-cue::after{content:"";position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:#fff;animation:cue 1.8s ease-in-out infinite}
+  @keyframes cue{0%{opacity:0;transform:translateY(0)}40%{opacity:1}100%{opacity:0;transform:translateY(14px)}}
+  /* scroll */
+  .reveal{opacity:0;transform:translateY(40px);transition:opacity 1s var(--ease),transform 1.1s var(--ease);transition-delay:var(--d,0s)}
+  .reveal.left{transform:translateX(-50px)}
+  .reveal.right{transform:translateX(50px)}
+  .reveal.zoom{transform:scale(.92)}
+  .reveal.in{opacity:1;transform:none}
+  .mask{clip-path:inset(18% 0 18% 0 round 18px);transition:clip-path 1.4s var(--ease),opacity 1s var(--ease),transform 1.2s var(--ease);transition-delay:var(--d,0s)}
+  .mask img{transform:scale(1.2);transition:transform 1.8s var(--ease)}
+  .mask.in{clip-path:inset(0 0 0 0 round 18px)}
+  .mask.in img{transform:scale(1)}
+  .card.mask.in:hover img{transform:scale(1.06)}
+  .overview .mask img.parallax{transition:none}
+  .card .t{transform:translateY(16px);opacity:0;transition:transform .9s var(--ease) .35s,opacity .9s ease .35s}
+  .card.in .t{transform:none;opacity:1}
+  .hl div{opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0s)}
+  .hl.in div{opacity:1;transform:none}
+  .gallery img{opacity:0;transform:translateY(30px) scale(.97);transition:opacity .9s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0s)}
+  .gallery img.in{opacity:1;transform:none}
+  .parallax{will-change:transform}
+  .btn-wa{position:relative;overflow:hidden}
+  .btn-wa::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);animation:shine 4.5s ease-in-out 2.5s infinite}
+  @keyframes shine{0%,70%{left:-60%}100%{left:130%}}
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+    .reveal,.mask,.hl div,.gallery img,.card .t,.hero .in-up{opacity:1!important;transform:none!important;clip-path:none!important}
+    .hero h1 .ln>span{transform:none!important}
+  }
+
+  @media (max-width:960px){
+    .nav ul{display:none}
+    .overview .wrap,.tour .wrap,.book .wrap{grid-template-columns:1fr;gap:44px}
+    .tour .phone{max-width:340px;margin:0 auto}
+    .grid{grid-template-columns:1fr 1fr}
+    .rv{grid-template-columns:1fr}
+    .hl .wrap{grid-template-columns:1fr 1fr}
+    .hl div:nth-child(3){border-left:0}
+    .hl div:nth-child(n+3){border-top:1px solid rgba(255,255,255,.1)}
+  }
+  @media (max-width:600px){
+    .wrap{padding:0 20px}
+    section.block{padding:80px 0}
+    .nav{height:64px}
+    .nav .btn{display:none}
+    .brand b{font-size:21px}
+    .hero .wrap{padding-bottom:84px}
+    .hero p{font-size:17px}
+    .hero .btn-ghost{display:none}
+    .grid{grid-template-columns:1fr;gap:16px}
+    .card{aspect-ratio:4/5}
+    .hl div{padding:24px 18px}
+    .hl b{font-size:19px}
+    form{padding:24px}
+    .row2{grid-template-columns:1fr}
+    .gallery{columns:2;column-gap:10px}
+    .gallery img{margin-bottom:10px;border-radius:10px}
+    .mbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:80;transform:translateY(120px);transition:transform .35s ease}
+    .mbar.on{transform:none}
+    .wm{transition:bottom .35s ease}
+    body.mb .wm{bottom:80px}
+    .mbar a{flex:1;justify-content:center}
+    .wm{bottom:12px;left:12px;font-size:11px}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a href="#topo" class="brand"><b>Espaço 978</b><span>Chácara</span></a>
+    <ul>
+      <li><a href="#espacos">Espaços</a></li>
+      <li><a href="#tour">Tour</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#data">Consultar data</a></li>
+    </ul>
+    <a class="btn btn-wa" href="#data">Consultar data</a>
+  </div>
+</nav>
+
+<div class="progress" id="progress"></div>
+<header class="hero" id="topo">
+  <div class="bg parallax" data-speed=".35"><img src="img/hero-1280.webp" srcset="img/hero-640.webp 640w, img/hero-1280.webp 1280w" sizes="100vw" width="960" height="1280" decoding="async" fetchpriority="high" alt="Piscina da Chácara Espaço 978 com jardim e céu azul"></div>
+  <div class="wrap hero-c">
+    <div class="kicker in-up" style="--d:.5s">Chácara para festas e eventos · Morada Nova, Uberlândia</div>
+    <h1><span class="ln"><span style="--d:.65s">O cenário pronto</span></span><span class="ln"><span style="--d:.8s">para a sua <em>festa</em>.</span></span></h1>
+    <p class="in-up" style="--d:1.05s">Piscina, área gourmet com churrasqueira, jardim iluminado e quartos para descansar. É só trazer os convidados.</p>
+    <div class="ctas in-up" style="--d:1.2s">
+      <a class="btn btn-wa" href="#data"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.2Z"/></svg>Consultar data no WhatsApp</a>
+      <a class="btn btn-ghost" href="#espacos">Conhecer o espaço</a>
+    </div>
+    <div class="rating in-up" style="--d:1.35s"><span class="stars">★★★★★</span> <span data-count="4.9" data-dec="1">4,9</span> no Google · <span data-count="63">63</span> avaliações</div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"></div>
+</header>
+
+<section class="hl" data-stagger>
+  <div class="wrap">
+    <div><b>Piscina</b><span>Com deck de pedra e jardim em volta</span></div>
+    <div><b>Área gourmet</b><span>Churrasqueira, pia e balcão com banquetas</span></div>
+    <div><b>Quartos</b><span>Para pernoitar depois da festa</span></div>
+    <div><b><span data-count="20">20</span> jogos de mesa</b><span>Já inclusos, sem precisar alugar</span></div>
+  </div>
+</section>
+
+<section class="block overview">
+  <div class="wrap">
+    <figure class="mask"><img class="parallax" data-speed="-.06" src="img/aerea-1280.webp" srcset="img/aerea-640.webp 640w, img/aerea-1280.webp 1280w" sizes="(max-width:960px) 100vw, 560px" width="1204" height="1600" decoding="async" alt="Vista de cima da chácara: jardim, caminho iluminado e piscina" loading="lazy"></figure>
+    <div class="reveal right">
+      <div class="kicker">Tudo em um só lugar</div>
+      <h2>Espaço de sobra para comemorar com quem você ama.</h2>
+      <p class="lead">Um gramado amplo e bem cuidado, com caminho de pedras iluminado, fonte, mesas de jardim e uma área coberta para receber os convidados com conforto, faça sol ou chuva.</p>
+      <ul class="checks" data-stagger>
+        <li>Área coberta ampla para montar a festa</li>
+        <li>Jardim com mesas, fonte e balanço na pérgola</li>
+        <li>Iluminação no caminho para festas à noite</li>
+        <li>Cozinha com fogão e freezer para o apoio</li>
+        <li>Espaço murado e reservado, só para o seu grupo</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="block spaces" id="espacos">
+  <div class="wrap">
+    <div class="head reveal">
+      <div>
+        <div class="kicker">Os espaços</div>
+        <h2>Conheça cada canto da chácara</h2>
+      </div>
+      <p class="lead">Fotos reais do Espaço 978.</p>
+    </div>
+    <div class="grid" data-stagger>
+      <div class="card mask"><img src="img/piscina-1280.webp" srcset="img/piscina-640.webp 640w, img/piscina-1280.webp 1280w" sizes="(max-width:600px) 100vw, (max-width:960px) 50vw, 380px" width="944" height="1256" decoding="async" alt="Piscina" loading="lazy"><div class="t"><h3>Piscina</h3><p>Água azulzinha, deck de pedra e palmeiras em volta.</p></div></div>
+      <div class="card mask"><img src="img/gourmet-1280.webp" srcset="img/gourmet-640.webp 640w, img/gourmet-1280.webp 1280w" sizes="(max-width:600px) 50vw, 280px" width="1204" height="1600" decoding="async" alt="Área gourmet com churrasqueira" loading="lazy"><div class="t"><h3>Área gourmet</h3><p>Churrasqueira de tijolinho, pia e balcão com banquetas.</p></div></div>
+      <div class="card mask"><img src="img/coberta-1280.webp" srcset="img/coberta-640.webp 640w, img/coberta-1280.webp 1280w" sizes="(max-width:600px) 100vw, (max-width:960px) 50vw, 380px" width="1204" height="1600" decoding="async" alt="Área coberta com vista para o jardim" loading="lazy"><div class="t"><h3>Área coberta</h3><p>Espaço amplo com vista para o jardim e a piscina.</p></div></div>
+      <div class="card mask"><img src="img/noite-1280.webp" srcset="img/noite-640.webp 640w, img/noite-1280.webp 1280w" sizes="(max-width:600px) 100vw, (max-width:960px) 50vw, 380px" width="944" height="1522" decoding="async" alt="Caminho iluminado e fonte ao entardecer" loading="lazy"><div class="t"><h3>Jardim iluminado</h3><p>A festa continua bonita depois que o sol se põe.</p></div></div>
+      <div class="card mask"><img src="img/balanco-1280.webp" srcset="img/balanco-640.webp 640w, img/balanco-1280.webp 1280w" sizes="(max-width:600px) 100vw, (max-width:960px) 50vw, 380px" width="899" height="1599" decoding="async" alt="Balanço de madeira sob pérgola com luzes" loading="lazy"><div class="t"><h3>Balanço na pérgola</h3><p>O cantinho preferido para as fotos da festa.</p></div></div>
+      <div class="card mask"><img src="img/quarto-1280.webp" srcset="img/quarto-640.webp 640w, img/quarto-1280.webp 1280w" sizes="(max-width:600px) 100vw, (max-width:960px) 50vw, 380px" width="1280" height="963" decoding="async" alt="Quarto com cama e beliche" loading="lazy"><div class="t"><h3>Quartos</h3><p>Para quem quer pernoitar e aproveitar mais.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block tour" id="tour">
+  <div class="wrap">
+    <div class="reveal left">
+      <div class="kicker">Tour em vídeo</div>
+      <h2>Dê uma volta pela chácara antes de visitar.</h2>
+      <p class="lead">Veja o jardim, a piscina e a área coberta como se você já estivesse lá. Gostou? Escolha a data e fale com a gente.</p>
+      <p style="margin-top:30px"><a class="btn btn-wa" href="#data">Consultar data</a></p>
+    </div>
+    <div class="phone reveal zoom">
+      <video src="img/tour.mp4" poster="img/tour-poster.webp" controls muted playsinline preload="none"></video>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="galeria" style="padding-top:0">
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:40px">
+      <div class="kicker">Galeria</div>
+      <h2>Mais fotos do espaço</h2>
+    </div>
+    <div class="gallery" data-stagger>
+      <img src="img/g4-1280.webp" srcset="img/g4-640.webp 640w, img/g4-1280.webp 1280w" sizes="(max-width:600px) 50vw, 280px" width="960" height="1280" decoding="async" alt="Mesa de jardim com a piscina ao fundo" loading="lazy">
+      <img src="img/g2-1280.webp" srcset="img/g2-640.webp 640w, img/g2-1280.webp 1280w" sizes="(max-width:600px) 50vw, 280px" width="1204" height="1600" decoding="async" alt="Caminho de pedras com palmeiras" loading="lazy">
+      <img src="img/g5-1280.webp" srcset="img/g5-640.webp 640w, img/g5-1280.webp 1280w" sizes="(max-width:600px) 50vw, 280px" width="960" height="1280" decoding="async" alt="Drink à beira da piscina" loading="lazy">
+      <img src="img/g3-1280.webp" srcset="img/g3-640.webp 640w, img/g3-1280.webp 1280w" sizes="(max-width:600px) 50vw, 280px" width="1204" height="1600" decoding="async" alt="Jardim com guarda-sóis e fonte" loading="lazy">
+      <img src="img/g1-1280.webp" srcset="img/g1-640.webp 640w, img/g1-1280.webp 1280w" sizes="(max-width:600px) 50vw, 280px" width="899" height="1599" decoding="async" alt="Vista do jardim a partir da pérgola" loading="lazy">
+      <img src="img/g6-1280.webp" srcset="img/g6-640.webp 640w, img/g6-1280.webp 1280w" sizes="(max-width:600px) 50vw, 280px" width="1204" height="1600" decoding="async" alt="Piscina com deck de pedra" loading="lazy">
+      <img src="img/g8-1280.webp" srcset="img/g8-640.webp 640w, img/g8-1280.webp 1280w" sizes="(max-width:600px) 50vw, 280px" width="1204" height="1600" decoding="async" alt="Fonte e caminho iluminado" loading="lazy">
+      <img src="img/g7-1280.webp" srcset="img/g7-640.webp 640w, img/g7-1280.webp 1280w" sizes="(max-width:600px) 50vw, 280px" width="1200" height="1600" decoding="async" alt="Balanço na pérgola" loading="lazy">
+      <img src="img/g9-1280.webp" srcset="img/g9-640.webp 640w, img/g9-1280.webp 1280w" sizes="(max-width:600px) 50vw, 280px" width="1204" height="1600" decoding="async" alt="Cozinha de apoio com fogão e freezer" loading="lazy">
+      <img src="img/g10-1280.webp" srcset="img/g10-640.webp 640w, img/g10-1280.webp 1280w" sizes="(max-width:600px) 50vw, 280px" width="1204" height="1600" decoding="async" alt="Quarto com cama" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="block reviews">
+  <div class="wrap">
+    <div class="kicker">Quem já fez festa aqui</div>
+    <h2>Nota 4,9 no Google</h2>
+    <div class="rv" data-stagger>
+      <blockquote class="reveal"><span class="stars">★★★★★</span><p>“O local contém 20 jogos de mesas todas novinhas, nem precisamos alugar. Um ambiente bem familiar e aconchegante.”</p><cite>Avaliação no Google</cite></blockquote>
+      <blockquote class="reveal"><span class="stars">★★★★★</span><p>“Uma chácara linda, aconchegante e muito bem cuidada. A festa ficou ainda mais bonita nesse lugar!”</p><cite>Avaliação no Google</cite></blockquote>
+      <blockquote class="reveal"><span class="stars">★★★★★</span><p>“Tudo muito bem cuidado, bonito, limpo e organizado. O espaço realmente superou nossas expectativas.”</p><cite>Avaliação no Google</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="block book" id="data">
+  <div class="wrap">
+    <div class="reveal left">
+      <div class="kicker">Consultar data</div>
+      <h2>Vamos ver se a sua data está livre?</h2>
+      <p class="lead">Preencha os dados e a mensagem já chega pronta no nosso WhatsApp. A gente responde com a disponibilidade e os valores.</p>
+      <div class="info">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Endereço</b><span>R. Ten. Mardônio Souza Silva, 978 · Morada Nova, Uberlândia/MG</span></div></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Atendimento</b><span>Todos os dias, das 7h às 22h</span></div></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><div><b>WhatsApp</b><span>(34) 98420-4046</span></div></div>
+      </div>
+      <iframe class="map" loading="lazy" title="Mapa da Chácara Espaço 978" src="https://maps.google.com/maps?q=Ch%C3%A1cara%20Espa%C3%A7o%20978%20festas%20e%20eventos%2C%20Uberl%C3%A2ndia&z=15&output=embed"></iframe>
+    </div>
+    <form class="reveal right" id="form">
+      <label>Seu nome<input id="nome" required placeholder="Como podemos te chamar?"></label>
+      <div class="row2">
+        <label>Data do evento<input id="dt" type="date" required></label>
+        <label>Convidados<input id="qtd" type="number" min="1" placeholder="Ex.: 60"></label>
+      </div>
+      <label>Tipo de evento
+        <select id="tipo">
+          <option>Aniversário</option>
+          <option>Casamento</option>
+          <option>Confraternização de empresa</option>
+          <option>Chá de bebê / chá revelação</option>
+          <option>Reunião de família</option>
+          <option>Outro</option>
+        </select>
+      </label>
+      <label>Vai querer pernoitar?
+        <select id="pernoite"><option>Não sei ainda</option><option>Sim</option><option>Não</option></select>
+      </label>
+      <button class="btn btn-wa" type="submit"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.2Z"/></svg>Enviar pelo WhatsApp</button>
+      <p class="note">Sem compromisso. Você fala direto com a gente.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b>Chácara Espaço 978</b><br>Festas e eventos · Uberlândia/MG</div>
+    <div>R. Ten. Mardônio Souza Silva, 978 · Morada Nova<br>(34) 98420-4046</div>
+  </div>
+</footer>
+
+<div class="mbar"><a class="btn btn-wa" href="#data">Consultar data no WhatsApp</a></div>
+
+<div class="lb" id="lb"><img alt=""></div>
+
+<!-- MARCA D'ÁGUA F9 CODING -->
+<div class="wm" aria-label="Prévia criada por F9 Coding · uso não autorizado">
+  <svg viewBox="0 0 40 40" aria-hidden="true">
+    <defs>
+      <linearGradient id="f9bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f5a45"/><stop offset="1" stop-color="#062b22"/></linearGradient>
+      <linearGradient id="f9glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d4fff0" stop-opacity=".95"/><stop offset="1" stop-color="#7fe3c2" stop-opacity=".75"/></linearGradient>
+    </defs>
+    <circle cx="20" cy="20" r="20" fill="url(#f9bg)"/>
+    <path d="M13 10h15v5h-9.5v3.6H26v5h-7.5V30H13Z" fill="url(#f9glass)" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/>
+  </svg>
+  <span>Prévia criada por F9 Coding · uso não autorizado</span>
+</div>
+
+<script>
+  const nav=document.getElementById('nav');
+  const mbar=document.querySelector('.mbar');
+  const onScroll=()=>{nav.classList.toggle('solid',scrollY>60);const on=scrollY>innerHeight*.75&&scrollY<document.getElementById('data').offsetTop-innerHeight*.5;mbar.classList.toggle('on',on);document.body.classList.toggle('mb',on)};
+  addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // atraso em cascata para grupos
+  document.querySelectorAll('[data-stagger]').forEach(g=>{
+    [...g.children].forEach((c,i)=>c.style.setProperty('--d',(i%4)*0.12+Math.floor(i/4)*0.05+'s'));
+  });
+  const targets=document.querySelectorAll('.reveal,.mask,.hl,.checks,.gallery img');
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -8% 0px'});
+  targets.forEach(el=>io.observe(el));
+  // contadores
+  const cio=new IntersectionObserver(es=>es.forEach(e=>{
+    if(!e.isIntersecting)return;cio.unobserve(e.target);
+    const el=e.target,end=parseFloat(el.dataset.count),dec=+el.dataset.dec||0;
+    if(reduce)return;const t0=performance.now(),dur=1600;
+    const step=t=>{const p=Math.min((t-t0)/dur,1),v=end*(1-Math.pow(1-p,3));el.textContent=v.toFixed(dec).replace('.',',');if(p<1)requestAnimationFrame(step)};
+    requestAnimationFrame(step);
+  }),{threshold:.6});
+  document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+  // parallax + barra de progresso + hero some ao rolar
+  const prog=document.getElementById('progress'),heroC=document.querySelector('.hero-c'),par=[...document.querySelectorAll('.parallax')];
+  let ticking=false;
+  const frame=()=>{
+    const y=scrollY,h=document.documentElement.scrollHeight-innerHeight;
+    prog.style.transform=`scaleX(${h>0?y/h:0})`;
+    if(!reduce){
+      par.forEach(el=>{const r=el.getBoundingClientRect(),sp=+el.dataset.speed;
+        if(el.closest('.hero')){el.style.transform=`translate3d(0,${y*sp}px,0)`}
+        else if(r.bottom>0&&r.top<innerHeight){el.style.transform=`translate3d(0,${(r.top+r.height/2-innerHeight/2)*sp}px,0) scale(1.12)`}});
+      if(y<innerHeight){heroC.style.opacity=1-y/(innerHeight*.75);heroC.style.transform=`translate3d(0,${y*.18}px,0)`}
+    }
+    ticking=false;
+  };
+  addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(frame);ticking=true}},{passive:true});frame();
+  const lb=document.getElementById('lb'),lbi=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(i=>i.addEventListener('click',()=>{lbi.src=i.src;lbi.alt=i.alt;lb.classList.add('on')}));
+  lb.addEventListener('click',()=>lb.classList.remove('on'));
+
+  const dt=document.getElementById('dt');
+  dt.min=new Date().toISOString().slice(0,10);
+  document.getElementById('form').addEventListener('submit',e=>{
+    e.preventDefault();
+    const v=id=>document.getElementById(id).value.trim();
+    const d=v('dt')?v('dt').split('-').reverse().join('/'):'a combinar';
+    let msg=`Olá! Vim pelo site da Chácara Espaço 978.\n\nNome: ${v('nome')}\nData: ${d}\nTipo de evento: ${v('tipo')}`;
+    if(v('qtd')) msg+=`\nConvidados: ${v('qtd')}`;
+    msg+=`\nPernoite: ${v('pernoite')}\n\nA data está disponível?`;
+    window.open('https://wa.me/5534984204046?text='+encodeURIComponent(msg),'_blank');
+  });
+</script>
+</body>
+</html>
